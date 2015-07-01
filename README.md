@@ -22,4 +22,6 @@
  - Yazılan kodlar kontrol sistemi sunucusuna gönderilip ,daha sonra istenen kısımlar indirilip üzerinde değişiklik yapılabilir.
  - Farklı gereksinimler için farklı dallar oluşturup aynı anda birden fazla geliştirme yapabilir ve bu geliştirmeleri sonradan tek bir projede toplayabiliriz.
  - Herhangi bir dosyanın eski sürümünü indirebilir,yeni sürümü ile arasındaki farkları görebiliriz.
+ 
+Daha sonra <https://github.com/> adresinden kayıt oldum.Bilgisayarıma da <https://windows.github.com/> adresinden github'ı yükledim.
 
