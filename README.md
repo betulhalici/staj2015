@@ -52,7 +52,8 @@
   
   Stajımın üçüncü günü markdown kullanımını araştırdım.
   
-  #####Markdown işaretleme dili
+  ##### Markdown işaretleme dili
+  
     Kaynak: <http://markdowntutorial.com/lesson/1/ sitesinden yararlandım./>
   + Bizim yerimize html dosyası üretir.
   + Düz yazı yazarken bu yazıyı formatlı bir şekilde yazmayı sağlar.
