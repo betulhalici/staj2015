@@ -25,7 +25,7 @@
  
 ## 2.gün  
 
-  Daha sonra <https://github.com/> adresinden kayıt oldum.Bilgisayarıma da <https://windows.github.com/> adresinden github'ı yükledim.Repository açmak için github hesabına giriş yapıp,**new repository**'i seçip ilerliyoruz.Çıkan ekranda repository name'i dolduruyoruz,description kısmı optional olduğu için doldurmaya gerek yok.Public ve initialize this repository with a README'yi işaretliyoruz.gitignore kısmından C'yi seçip,license kısmını boş geçerek ilerliyoruz.Ve create repository'e tıklıyoruz.Klasör isminin yanındaki + 'ya tıklayarak buraya kodlarımızı eklemeye başlayabiliriz.En son **commit new file** diyerek işlemimizi bitiririz.
+  Stajımın ikinci günü github kurulumuyla uğraştım. <https://github.com/> adresinden kayıt oldum.Bilgisayarıma da <https://windows.github.com/> adresinden github'ı yükledim.Repository açmak için ise github hesabına giriş yapıp,**new repository**'i seçip ilerliyoruz.Çıkan ekranda repository name'i dolduruyoruz,description kısmı optional olduğu için doldurmaya gerek yok.Public ve initialize this repository with a README'yi işaretliyoruz.gitignore kısmından C'yi seçip,license kısmını boş geçerek ilerliyoruz.Ve create repository'e tıklıyoruz.Klasör isminin yanındaki + 'ya tıklayarak buraya kodlarımızı eklemeye başlayabiliriz.En son **commit new file** diyerek işlemimizi bitiririz.
 
 
 
