@@ -115,7 +115,7 @@
      
      ######Vurgulama
      
-      (**)isim(**) şeklinde yazarsak isim kalınlaşıyor.
+      (2 tane *)isim(2 tane *) şeklinde yazarsak isim kalınlaşıyor.
       
      ######Resim ekleme
      
