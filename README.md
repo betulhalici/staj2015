@@ -13,7 +13,7 @@
 
    Daha önce bilgim olmadığı için araştırmaya başladım.
    
-   #####Source kontol sistem
+   #####Source kontrol sistem
     Yazılım geliştirirken takım olarak çalışılabilmesini sağlayan sistemdir.Aynı anda,aynı proje üzerinde birçok kişinin çalışmasını mümkün kılan sistemdir.Uygulamamızın kaynak kodunun yönetimini sağlayan uygulamalardır.Yazdığımız kodların güvenilir bir şekilde saklanması,versiyonların takip edilmesi,kodun gelişimine katkıda bulunanların ve kodun kontrol altında tutulması gibi ihtiyaçları gidermek için ortaya çıkmıştır.Kodumuzu takımlar halinde geliştiriyorsak,kod paylaşımını kolaylıkla yapabilir,revizyonları kontrol edebiliriz.Kodun geçmiş sürümleri de saklandığı için kodumuzun istediğimiz bir sürümüne geri dönebiliriz.
    
    ######Faydaları
@@ -52,9 +52,10 @@
   
   Stajımın üçüncü günü markdown kullanımını araştırdım.
   
-  ##### Markdown işaretleme dili
+ #####Markdown işaretleme dili
   
-    Kaynak: <http://markdowntutorial.com/lesson/1/ sitesinden yararlandım./>
+    Kaynak: <http://markdowntutorial.com/lesson/1//> sitesinden yararlandım.
+    
   + Bizim yerimize html dosyası üretir.
   + Düz yazı yazarken bu yazıyı formatlı bir şekilde yazmayı sağlar.
   
@@ -114,7 +115,7 @@
      
      ######Vurgulama
      
-      **isim** şeklinde yazarsak isim kalınlaşıyor.
+      (**)isim(**) şeklinde yazarsak isim kalınlaşıyor.
       
      ######Resim ekleme
      
