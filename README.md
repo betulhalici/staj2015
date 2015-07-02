@@ -44,7 +44,7 @@
   + **git checkout:** Branch'ler arası geçiş yapmaya yarar.
   + **git merge:** Bir veya birden fazla branch’i şu an bulunduğunuz branch’e birleştirir.
   + **git reset:** Çalışma dizinimizi bir önceki commit'e sıfırlar.
-  + **git pull:** Uzakta bağlı olduğumuz git reposundaki dosyaları bilgisayarınıza indirir ve bulunduğumuz branchla birleştirir.
+  + **git pull:** Uzakta bağlı olduğumuz git reposundaki dosyaları bilgisayarınıza indirir ve bulunduğumuz branchla    birleştirir.
   + **git push:** Yerelde yaptığımız commit'leri uzaktaki git reposuna aktarır.
   + **git remote:** Bağlı olduğumuz uzak git repo'larını gösterir.
 
@@ -52,9 +52,9 @@
   
   Stajımın üçüncü günü markdown kullanımını araştırdım.
   
- #####Markdown işaretleme dili
+ **Markdown işaretleme dili**
   
-    Kaynak: <http://markdowntutorial.com/lesson/1//> sitesinden yararlandım.
+    Kaynak: <http://markdowntutorial.com/lesson/1/> sitesinden yararlandım.
     
   + Bizim yerimize html dosyası üretir.
   + Düz yazı yazarken bu yazıyı formatlı bir şekilde yazmayı sağlar.
