@@ -34,19 +34,19 @@
      Örnek: git config --global user.email "email adresi"
             git config --global user.name "kullanıcı adı"
 
-  + **git init** Bulunduğumuz dizine git repository'si açar.
-  + **git clone** Uzak sunucudaki git repository'sini bilgisayarımıza kopyalamaya yarar.
-  + **git add** Belirttiğimiz dosyayı çalışma dizinine ekler.
-  + **git rm** Belirttiğimiz dosyayı çalışma dizininden siler.
-  + **git commit** Çalışma dizinine eklenen tüm dosyaları yerel git reposuna ekler.
-  + **git status** Ekrana dizindeki dosyaların durumunu özetleyen bir yazı bastırır.
-  + **git branch** Varolan branch'leri listeler.Eğer yanına branch ismi yazarsak, yazdığımız isimde bir branch oluşturur.
-  + **git checkout** Branch'ler arası geçiş yapmaya yarar.
-  + **git merge** Bir veya birden fazla branch’i şu an bulunduğunuz branch’e birleştirir.
-  + **git reset** Çalışma dizinimizi bir önceki commit'e sıfırlar.
-  + **git pull** Uzakta bağlı olduğumuz git reposundaki dosyaları bilgisayarınıza indirir ve bulunduğumuz branchla birleştirir.
-  + **git push** Yerelde yaptığımız commit'leri uzaktaki git reposuna aktarır.
-  + **git remote** Bağlı olduğumuz uzak git repo'larını gösterir.
+  + **git init:** Bulunduğumuz dizine git repository'si açar.
+  + **git clone:** Uzak sunucudaki git repository'sini bilgisayarımıza kopyalamaya yarar.
+  + **git add:** Belirttiğimiz dosyayı çalışma dizinine ekler.
+  + **git rm:** Belirttiğimiz dosyayı çalışma dizininden siler.
+  + **git commit:** Çalışma dizinine eklenen tüm dosyaları yerel git reposuna ekler.
+  + **git status:** Ekrana dizindeki dosyaların durumunu özetleyen bir yazı bastırır.
+  + **git branch:** Varolan branch'leri listeler.Eğer yanına branch ismi yazarsak, yazdığımız isimde bir branch oluşturur.
+  + **git checkout:** Branch'ler arası geçiş yapmaya yarar.
+  + **git merge:** Bir veya birden fazla branch’i şu an bulunduğunuz branch’e birleştirir.
+  + **git reset:** Çalışma dizinimizi bir önceki commit'e sıfırlar.
+  + **git pull:** Uzakta bağlı olduğumuz git reposundaki dosyaları bilgisayarınıza indirir ve bulunduğumuz branchla birleştirir.
+  + **git push:** Yerelde yaptığımız commit'leri uzaktaki git reposuna aktarır.
+  + **git remote:** Bağlı olduğumuz uzak git repo'larını gösterir.
 
 
 
