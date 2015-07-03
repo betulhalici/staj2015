@@ -121,6 +121,19 @@
      
        ![Alt text][id]
        [id] : url/to/image "Optional title attribute"
+       
+       ## 4.gün
+        
+        Git komutlarıyla komut satırında uygulama yaptım.Daha önceden denemee adlı klasör oluşturmuştum.Bu klasörle ilgili bazı değişikler yaptım.
+        
+        Öncelikle git komutlarını araştırmaya başladım.
+        
+        **Sık Kullanılan Git Komutları**
+        
+        Kaynak: <http://www.mertsimsek.net/git-sik-kullanilan-git-komutlari/>
+
+            
+        
 
      
 
