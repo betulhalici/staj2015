@@ -129,17 +129,29 @@
         Komut satırından şu komutları girdim.
         
        - pwd
+       
        - cd..
+       
        - pwd
+       
        - cd Dekstop/
+       
        - mkdir sources
+       
        - cd sources/
+       
        - pwd
+       
        - git clone https://github.com/betulhalici/denemee.git
+       
        - ls
+       
        - cd denemee/
+       
        - ls
+       
        - explorer .
+       
        - git status
            
            modified README.md (yapılan değişikliği söylüyor)
@@ -180,6 +192,16 @@
          (commit edilecek bir şey kalmadı,siteyi refresh yaptığımız zaman değişiklik gözüküyor.)
          
        - git push
+       
+       - git status
+       
+          deleted:README.md     
+          kalıcı olarak README.md dosyası silindi.
+          
+       - git checkout README.md
+       
+          bu komutu kullanınca dosyam geri geldi.
+          
        
       
           
