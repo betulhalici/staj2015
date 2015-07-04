@@ -211,8 +211,11 @@
   **Operatörler**
   
 using System;
+
 using System.Collections.Generic;
+
 using System.Linq;
+
 using System.Text;
  
 namespace ConsoleApplication1
@@ -280,10 +283,12 @@ if (a > b)
 {
     Console.WriteLine("a sayısı b sayısından büyüktür.");
 }
+
 else if (a < b)
 {
     Console.WriteLine("a sayısı b sayısından küçüktür.");
 }
+
 else
 {
     Console.WriteLine("a sayısı b sayısına eşittir.");
@@ -300,13 +305,17 @@ switch (islem)
     case 1:
         Console.WriteLine("1");
         break;
+        
     case 2:
         Console.WriteLine("2");
         break;
+        
     case 3:
+    
     case 4:
         Console.WriteLine("3-4");
         break;
+        
     default:
         Console.WriteLine("Gecersiz");
         break;
@@ -373,6 +382,7 @@ for (int i = 0; i < dizi4.Length; i++)
 Programın amacı şu olsun: kullanıcıdan bir tarih alalım, daha sonra bu string tipindeki tarihi gerçek bir tarih nesnesine dönüştürüp bir ay sonrasını ekrana basalım. Böylece tarih nesnesinden de kısaca bahsetmiş olalım.
 
 using System;
+
 namespace ConsoleApplication2
 {
     class Program
@@ -380,6 +390,7 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             Console.Write("Lütfen tarih giriniz (ör: 29.08.1990): ");
+            
             string kullaniciGirisi = Console.ReadLine();
  
             string[] tarihBilesenleri = kullaniciGirisi.Split('.');
@@ -429,16 +440,21 @@ namespace Ders7
         static void Main(string[] args)
         {
             int[] dizi = new int[] { 3, 4, 1, 2 };
+            
             dizi.GetLength(0); // Tek boyutlu diziler için 0 yazılır. Sonuç: 4
+            
             dizi.SetValue(5, 3); // "2" değerini "5" olarak değiştirir.
  
             int sira = Array.IndexOf(dizi, 1); // dizi içerisinde "1" elemanının sırasını söyler. Sonuç: 2
+            
             Console.WriteLine(sira); // 2
  
             Array.Reverse(dizi); // Diziyi tersine çevirir. Sonuç: 5, 1, 4, 3
+            
             Array.Sort(dizi); // Diziyi küçükten büyüğe sıralar. Sonuç: 1, 3, 4, 5
  
             //dizi'nin son halini yazdıralım... 1,3,4,5 olmasını bekliyoruz
+            
             for (int i = 0; i < dizi.GetLength(0); i++)
             {
                 Console.Write(dizi[i] + " ");
