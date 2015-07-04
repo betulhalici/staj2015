@@ -219,10 +219,13 @@ using System.Linq;
 using System.Text;
  
 namespace ConsoleApplication1
+
 {
     class Program
+    
     {
         static void Main(string[] args)
+        
         {
             int sonuc, a, b;
  
@@ -280,16 +283,19 @@ int a = 3;
 int b = 4;
  
 if (a > b)
+
 {
     Console.WriteLine("a sayısı b sayısından büyüktür.");
 }
 
 else if (a < b)
+
 {
     Console.WriteLine("a sayısı b sayısından küçüktür.");
 }
 
 else
+
 {
     Console.WriteLine("a sayısı b sayısına eşittir.");
 }
@@ -301,6 +307,7 @@ else
 int islem = 1;
  
 switch (islem)
+
 {
     case 1:
         Console.WriteLine("1");
@@ -341,7 +348,9 @@ while (j < 5)
  
 //----- FOREACH Döngüsü -----//
 int[] array = new int[] { 0, 1, 2, 3, 4 };
+
 foreach (int item in array)
+
 {
     Console.WriteLine(item);
 }
@@ -375,6 +384,7 @@ int[] dizi4 = { 10, 20, 30, 40, 50 };
     For döngüsü kullanarak, dizi içeriğini ekrana şu şekilde basabiliriz:
 
 for (int i = 0; i < dizi4.Length; i++)
+
 {
     Console.Write(dizi4[i] + " ");
 }
@@ -384,10 +394,13 @@ Programın amacı şu olsun: kullanıcıdan bir tarih alalım, daha sonra bu str
 using System;
 
 namespace ConsoleApplication2
+
 {
     class Program
+    
     {
         static void Main(string[] args)
+        
         {
             Console.Write("Lütfen tarih giriniz (ör: 29.08.1990): ");
             
