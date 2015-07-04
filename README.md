@@ -126,11 +126,69 @@
         
         Git komutlarıyla komut satırında uygulama yaptım.Daha önceden denemee adlı klasör oluşturmuştum.Bu klasörle ilgili bazı değişikler yaptım.
         
-        Öncelikle git komutlarını araştırmaya başladım.
+        Komut satırından şu komutları girdim.
         
-        **Sık Kullanılan Git Komutları**
+       - pwd
+       - cd..
+       - pwd
+       - cd Dekstop/
+       - mkdir sources
+       - cd sources/
+       - pwd
+       - git clone https://github.com/betulhalici/denemee.git
+       - ls
+       - cd denemee/
+       - ls
+       - explorer .
+       - git status
+           
+           modified README.md (yapılan değişikliği söylüyor)
+           no changes added to commit
         
-        Kaynak: <http://www.mertsimsek.net/git-sik-kullanilan-git-komutlari/>
+       - git diff
+         
+           -(silineni gösteriyor)
+           +(ekleneni gösteriyor)
+           yapılan değişikliği gösteriyor.
+           
+       - git status
+           
+           no changes added to commit
+           
+       - git diff
+       
+       - git add.
+       
+       - git status
+       
+           modified README.md
+           
+       - git commit -m "konsol denemesi"
+       
+           burada email ve ismimi girmemi istedi.
+           
+       - git config --global user.email "email adresini giriniz"
+       - git config --global user.name "ad soyad"
+       
+       - git commit -m "konsol denemesi"
+       
+          1 file changed,2 insertions(+),2 deletions(-)
+          
+       - git status
+       
+         nothing to commit,working directory clean
+         (commit edilecek bir şey kalmadı,siteyi refresh yaptığımız zaman değişiklik gözüküyor.)
+         
+       - git push
+       
+      
+          
+          
+       
+       
+           
+           
+
 
             
         
