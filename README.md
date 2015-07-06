@@ -235,6 +235,7 @@ using System.Text;
 namespace ConsoleApplication1
 
 {
+
     class Program
     
     {
@@ -347,6 +348,7 @@ switch (islem)
  **döngü yapıları**
  
  //----- FOR Döngüsü -----//
+ 
 for (int i = 0; i < 5; i++)
 
 {
@@ -365,6 +367,7 @@ while (j < 5)
 }
  
 //----- FOREACH Döngüsü -----//
+
 int[] array = new int[] { 0, 1, 2, 3, 4 };
 
 foreach (int item in array)
@@ -416,6 +419,7 @@ using System;
 namespace ConsoleApplication2
 
 {
+
     class Program
     
     {
@@ -442,7 +446,7 @@ namespace ConsoleApplication2
      DateTime nesnesi tarih bilgilerini tutmamızı sağlar. Aslında gün, ay, yıl, saat, dakika, saniye gibi değerlerin tümünü içerisinde barındıran bir tiptir.Bu tarih nesnesi, tarih ile alakalı bir çok işlemde bize yardımcı olacaktır. Yeni bir tarih nesnesi tanımlıyoruz ve değer olarak da kullanıcının girmiş olduğu tarihi vermeye çalışacağız. new DateTime(Yil, Ay, Gun)şeklinde tanımlama yapıyoruz. Yalnız buradaki yıl, ay ve gün değişkeni normalde int tipinde olması lazım; ancak bizim elimizde string dizisi olduğu için her bir değeri int tipine dönüştürmemiz gerek. Bu noktada Convert.ToInt32 metodunu kullanıyoruz.Convert.ToInt32(tarihBilesenleri[2]) diyerek, tarihBilesenleri dizisinin 3. elemanını alıp, Convert metodu ile string tipinden int tipine dönüştürüyoruz. Aynı şekilde ay ve günü de dönüştürüyoruz.
      En alttaki Console.ReadKey satırını koymazsak, program çalışır ve sonlandığı anda hemen kapanır, ekrandaki değerleri göremeyiz. Bu satırı yazdığımızda, program çalışmasını bitirecek ve bu satıra geldiğinde bir tuşa basılmasını bekleyecek, dolayısıyla biz de ekranda yazılanları okuyabileceğiz.
      
-     ***Dizi metotları*** ise önceden yazılmış, belirli işlemleri yapmaya yarayan kod bloklarıdırlar. Mesela elinizde bir sayı dizisi var ve sayıları sıralamak istiyorsunuz. Sort() metodunu kullanabilirsiniz.Bu metodları herhangi bir dizi değişkeninin sonuna "." koyduktan sonra yazabilirsiniz.
+     Dizi metotları ise önceden yazılmış, belirli işlemleri yapmaya yarayan kod bloklarıdırlar. Mesela elinizde bir sayı dizisi var ve sayıları sıralamak istiyorsunuz. Sort() metodunu kullanabilirsiniz.Bu metodları herhangi bir dizi değişkeninin sonuna "." koyduktan sonra yazabilirsiniz.
      
 -	CopyTo: Bir dizinin bir bölümünü veya tamamını başka bir diziye kopyalamanızı sağlar.
 
@@ -469,6 +473,7 @@ using System;
 namespace Ders7
 
 {
+
     class Program
     
     {
@@ -503,6 +508,7 @@ namespace Ders7
 }
 
 ÇIKTI: 2
+
        1 3 4 5
 
 
