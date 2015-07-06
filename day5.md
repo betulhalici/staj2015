@@ -171,6 +171,42 @@ namespace ConsoleApplication12
 ÇIKTI: True
 
        False
+       
+       False
+       
+       False
+       
+       False
+       
+------------------------------------------
+
+namespace ConsoleApplication12
+
+{
+    class Program
+    
+    {
+        static void Main(string[] args)
+        
+        {
+            bool b1 = 35 > 10 && 10 == 50;
+            
+            bool b2 = 35 > 10 && 10 != 50;
+            
+            bool b3 = 5 is int || 12 * 3 == 200;
+            
+            bool b4 = 5 < 4 || 45 / 5 == 9;
+            
+            bool b5 = !(5 < 4);
+            
+            Console.Write(b1 + " " + b2 + " " + b3 + " " + b4 + " " + b5);
+            
+            Console.Read();
+        }
+    }
+}
+
+ÇIKTI: False True True True True
 
  
 **if else koşul yapısı**
