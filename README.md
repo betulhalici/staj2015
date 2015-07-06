@@ -35,17 +35,29 @@
             git config --global user.name "kullanıcı adı"
 
   + **git init:** Bulunduğumuz dizine git repository'si açar.
+  
   + **git clone:** Uzak sunucudaki git repository'sini bilgisayarımıza kopyalamaya yarar.
+  
   + **git add:** Belirttiğimiz dosyayı çalışma dizinine ekler.
+  
   + **git rm:** Belirttiğimiz dosyayı çalışma dizininden siler.
+  
   + **git commit:** Çalışma dizinine eklenen tüm dosyaları yerel git reposuna ekler.
+  
   + **git status:** Ekrana dizindeki dosyaların durumunu özetleyen bir yazı bastırır.
+  
   + **git branch:** Varolan branch'leri listeler.Eğer yanına branch ismi yazarsak, yazdığımız isimde bir branch oluşturur.
+  
   + **git checkout:** Branch'ler arası geçiş yapmaya yarar.
+  
   + **git merge:** Bir veya birden fazla branch’i şu an bulunduğunuz branch’e birleştirir.
+  
   + **git reset:** Çalışma dizinimizi bir önceki commit'e sıfırlar.
+  
   + **git pull:** Uzakta bağlı olduğumuz git reposundaki dosyaları bilgisayarınıza indirir ve bulunduğumuz branchla    birleştirir.
+  
   + **git push:** Yerelde yaptığımız commit'leri uzaktaki git reposuna aktarır.
+  
   + **git remote:** Bağlı olduğumuz uzak git repo'larını gösterir.
 
 ## 3.gün
@@ -54,9 +66,10 @@
   
  **Markdown işaretleme dili**
   
-    Kaynak: <http://markdowntutorial.com/lesson/1/> sitesinden yararlandım.
+    Kaynak: <http://1zinnur9.github.io/documents/markdown/index.html#slide1/> sitesinden yararlandım.
     
   + Bizim yerimize html dosyası üretir.
+  
   + Düz yazı yazarken bu yazıyı formatlı bir şekilde yazmayı sağlar.
   
     ######Paragraflar
@@ -180,6 +193,7 @@
            burada email ve ismimi girmemi istedi.
            
        - git config --global user.email "email adresini giriniz"
+       
        - git config --global user.name "ad soyad"
        
        - git commit -m "konsol denemesi"
@@ -204,9 +218,9 @@
           
    ## 5.gün
    
-        Stajımın 5.günü C# çalışmaya başladım,çeşitli örnekleri inceledim.
+   Stajımın 5.günü C# çalışmaya başladım,çeşitli örnekleri inceledim.
         
-  Kaynak: <http://www.kemalkefeli.com/csharp-dersleri-icerik.html/>
+      Kaynak: <http://www.kemalkefeli.com/csharp-dersleri-icerik.html/>
   
   **Operatörler**
   
@@ -328,19 +342,23 @@ switch (islem)
         break;
 }
 
-switch (değişken) tanımlamasındaki değişkenin değeri yazdığımız case değerleri ile kontrol ediliyor. Burada islem=1 olduğu için case 1 ifadesine girilecek ve ekrana 1 yazılacak ardından da break komutu ile switch den çıkılacak. Burda birkaç ekstra özellik var, kodda da göreceğiniz gibi case 3 durumunun kodu yok ve hemen altında case 4 tanımlanmış. Eğer böyle yazarsanız 3 ve 4 için aynı işlemi yap anlamına gelecektir. Bir diğer nokta da bir nevi hata kontrolü olarak da kullanılabilecek olan default anahtar kelimesi. Eğer değişkenin değeri yazdığımız case ifadeleri arasında bulunamazsa otomatik olarak default ifadesi çalıştırılacak. Yazmak zorunda değilsiniz elbette, yazmadığınız taktirde switch bloğu içerisinde hiçbir şey yapılmadan çıkılacaktır.
+   switch (değişken) tanımlamasındaki değişkenin değeri yazdığımız case değerleri ile kontrol ediliyor. Burada islem=1 olduğu için case 1 ifadesine girilecek ve ekrana 1 yazılacak ardından da break komutu ile switch den çıkılacak. Burda birkaç ekstra özellik var, kodda da göreceğiniz gibi case 3 durumunun kodu yok ve hemen altında case 4 tanımlanmış. Eğer böyle yazarsanız 3 ve 4 için aynı işlemi yap anlamına gelecektir. Bir diğer nokta da bir nevi hata kontrolü olarak da kullanılabilecek olan default anahtar kelimesi. Eğer değişkenin değeri yazdığımız case ifadeleri arasında bulunamazsa otomatik olarak default ifadesi çalıştırılacak. Yazmak zorunda değilsiniz elbette, yazmadığınız taktirde switch bloğu içerisinde hiçbir şey yapılmadan çıkılacaktır.
 
  **döngü yapıları**
  
  //----- FOR Döngüsü -----//
 for (int i = 0; i < 5; i++)
+
 {
     Console.WriteLine(i);
 }
  
 //----- WHILE Döngüsü -----//
+
 int j = 0;
+
 while (j < 5)
+
 {
     Console.WriteLine(j);
     j++;
@@ -360,6 +378,7 @@ foreach (int item in array)
 //Birinci tanımlama şekli
 
 int[] dizi;
+
 dizi = new int[20];
  
 //İkinci tanımlama şekli
@@ -369,6 +388,7 @@ int[] dizi2 = new int[20];
 //Birinci ve ikinci tanımlama için değer ataması
 
 dizi2[0] = 50;
+
 dizi2[1] = 60;
 
 //20 değeri de bu şekilde tanımlayabiliriz
@@ -389,7 +409,7 @@ for (int i = 0; i < dizi4.Length; i++)
     Console.Write(dizi4[i] + " ");
 }
 
-Programın amacı şu olsun: kullanıcıdan bir tarih alalım, daha sonra bu string tipindeki tarihi gerçek bir tarih nesnesine dönüştürüp bir ay sonrasını ekrana basalım. Böylece tarih nesnesinden de kısaca bahsetmiş olalım.
+Programın amacı şu olsun: kullanıcıdan bir tarih alalım, daha sonra bu string tipindeki tarihi gerçek bir tarih nesnesine dönüştürüp bir ay sonrasını ekrana basalım.
 
 using System;
 
@@ -418,11 +438,11 @@ namespace ConsoleApplication2
     }
 }
 
-   Console.Write komutu ekrana yazı basmamızı sağlayan komuttur. Burada kullanıcıya tarih girmesini söylüyoruz. Bir alt satırda string tipinde bir değişken tanımlıyoruz ve kullanıcının girmiş olduğu değeri Console.ReadLine komutu yardımıyla bu değişkene atıyoruz.Split fonksiyonu string tipindeki değişkenlere uygulanabilir. Parametre olarak bir karakter veya kelime alır. Aldığı parametreyi string değişken içinde arar ve bulduğu her noktadan bölüp, parçalarından bir dizi oluşturur.
+   **Console.Write** komutu ekrana yazı basmamızı sağlayan komuttur. Burada kullanıcıya tarih girmesini söylüyoruz. Bir alt satırda string tipinde bir değişken tanımlıyoruz ve kullanıcının girmiş olduğu değeri **Console.ReadLine** komutu yardımıyla bu değişkene atıyoruz.Split fonksiyonu string tipindeki değişkenlere uygulanabilir. Parametre olarak bir karakter veya kelime alır. Aldığı parametreyi string değişken içinde arar ve bulduğu her noktadan bölüp, parçalarından bir dizi oluşturur.
      DateTime nesnesi tarih bilgilerini tutmamızı sağlar. Aslında gün, ay, yıl, saat, dakika, saniye gibi değerlerin tümünü içerisinde barındıran bir tiptir.Bu tarih nesnesi, tarih ile alakalı bir çok işlemde bize yardımcı olacaktır. Yeni bir tarih nesnesi tanımlıyoruz ve değer olarak da kullanıcının girmiş olduğu tarihi vermeye çalışacağız. new DateTime(Yil, Ay, Gun)şeklinde tanımlama yapıyoruz. Yalnız buradaki yıl, ay ve gün değişkeni normalde int tipinde olması lazım; ancak bizim elimizde string dizisi olduğu için her bir değeri int tipine dönüştürmemiz gerek. Bu noktada Convert.ToInt32 metodunu kullanıyoruz.Convert.ToInt32(tarihBilesenleri[2]) diyerek, tarihBilesenleri dizisinin 3. elemanını alıp, Convert metodu ile string tipinden int tipine dönüştürüyoruz. Aynı şekilde ay ve günü de dönüştürüyoruz.
      En alttaki Console.ReadKey satırını koymazsak, program çalışır ve sonlandığı anda hemen kapanır, ekrandaki değerleri göremeyiz. Bu satırı yazdığımızda, program çalışmasını bitirecek ve bu satıra geldiğinde bir tuşa basılmasını bekleyecek, dolayısıyla biz de ekranda yazılanları okuyabileceğiz.
      
-     Dizi metotları ise önceden yazılmış, belirli işlemleri yapmaya yarayan kod bloklarıdırlar. Mesela elinizde bir sayı dizisi var ve sayıları sıralamak istiyorsunuz. Sort() metodunu kullanabilirsiniz.Bu metodları herhangi bir dizi değişkeninin sonuna "." koyduktan sonra yazabilirsiniz.
+     ***Dizi metotları*** ise önceden yazılmış, belirli işlemleri yapmaya yarayan kod bloklarıdırlar. Mesela elinizde bir sayı dizisi var ve sayıları sıralamak istiyorsunuz. Sort() metodunu kullanabilirsiniz.Bu metodları herhangi bir dizi değişkeninin sonuna "." koyduktan sonra yazabilirsiniz.
      
 -	CopyTo: Bir dizinin bir bölümünü veya tamamını başka bir diziye kopyalamanızı sağlar.
 
@@ -447,10 +467,13 @@ namespace ConsoleApplication2
 using System;
  
 namespace Ders7
+
 {
     class Program
+    
     {
         static void Main(string[] args)
+        
         {
             int[] dizi = new int[] { 3, 4, 1, 2 };
             
@@ -469,6 +492,7 @@ namespace Ders7
             //dizi'nin son halini yazdıralım... 1,3,4,5 olmasını bekliyoruz
             
             for (int i = 0; i < dizi.GetLength(0); i++)
+            
             {
                 Console.Write(dizi[i] + " ");
             }
@@ -477,6 +501,9 @@ namespace Ders7
         }
     }
 }
+
+ÇIKTI: 2
+       1 3 4 5
 
 
 
