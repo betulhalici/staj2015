@@ -291,6 +291,7 @@ namespace ConsoleApplication1
 }
 
 ÇIKTI: Aritmetik İşlemler  
+
        6
       -2
        7
