@@ -73,7 +73,8 @@ namespace ConsoleApplication1
     }
 }
 
-ÇIKTI: Aritmetik İşlemler  
+ÇIKTI: Aritmetik İşlemler 
+
        6
       -2
        7
@@ -89,6 +90,7 @@ namespace ConsoleApplication1
 **if else koşul yapısı**
 
 int a = 3;
+
 int b = 4;
  
 if (a > b)
@@ -111,10 +113,16 @@ else
 
 ÇIKTI: a sayısı b sayısından küçüktür.
 
+-----------------------
+
 using System;
+
 using System.Collections.Generic;
+
 using System.Linq;
+
 using System.Text;
+
 using System.Threading.Tasks;
 
 namespace ConsoleApplication12
@@ -128,10 +136,12 @@ namespace ConsoleApplication12
         
         {
             int a = 5, b = 7;
+            
             if(a<b)
             
             {
                 Console.WriteLine("a b'den küçük");
+                
                 Console.Write(a);
             }
             
@@ -139,6 +149,7 @@ namespace ConsoleApplication12
             
             {
                 Console.WriteLine("a b'den küçük değil");
+                
                 Console.Write(b);
             }
             
