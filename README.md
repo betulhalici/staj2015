@@ -265,11 +265,11 @@ namespace ConsoleApplication1
  
             a = 4;
             b = a++; //++ sağda ise önce atama yapılır sonra artırma yapılır
-            Console.WriteLine("a:" + a + " b:" + b); //a=5, b=4
+            Console.WriteLine("a: " + a + " b:" + b); //a=5, b=4
  
             a = 4;
             b = ++a; //++ solda ise önce artırma yapılır sonra atama yapılır
-            Console.WriteLine("a:" + a + " b:" + b); //a=5, b=5
+            Console.WriteLine("a: " + a + " b:" + b); //a=5, b=5
  
             //Karşılaştırma işlemleri
             Console.WriteLine("\nKarşılaştırma İşlemleri");
@@ -277,8 +277,6 @@ namespace ConsoleApplication1
  
             sonuc2 = 50 > 45; //50 sayısı 45'ten büyüktür, doğru
             Console.WriteLine(sonuc2); //True (Doğru)
- 
-            sonuc2 = 50             Console.WriteLine(sonuc); //2
  
             sonuc = a << 1; //a'nın bitlerini bir sola kaydır, yani a'yı 2 ile çarp
             Console.WriteLine(sonuc); //4
@@ -292,6 +290,19 @@ namespace ConsoleApplication1
     }
 }
 
+ÇIKTI: Aritmetik İşlemler
+       6
+       -2
+       7
+       1
+       a: 5 b: 4
+       a: 5 b: 5
+       
+       Karşılaştırma İşlemleri
+       True 
+       10
+       40
+       
 **if else koşul yapısı**
 
 int a = 3;
