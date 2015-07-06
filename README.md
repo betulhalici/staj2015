@@ -290,13 +290,13 @@ namespace ConsoleApplication1
     }
 }
 
-ÇIKTI: Aritmetik İşlemler
-       6
-       -2
-       7
-       1
-       a: 5 b: 4
-       a: 5 b: 5
+ÇIKTI: Aritmetik İşlemler 
+       6 
+       -2 
+       7 
+       1 
+       a: 5 b: 4 
+       a: 5 b: 5 
        
        Karşılaştırma İşlemleri
        True 
