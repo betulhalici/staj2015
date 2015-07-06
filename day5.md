@@ -208,6 +208,72 @@ namespace ConsoleApplication12
 
 ÇIKTI: False True True True True
 
+--------------------------------
+
+using System;
+
+ class Operatorler
+ 
+ {
+ 
+ 	static void Main()
+ 	
+ 	{
+ 		int a=0xff;
+ 	
+ 		int b=0Xff;
+ 		
+ 		Console.Write(a+" "+b);
+ 		
+ 	}
+ 	
+ }
+ 
+ ÇIKTI: 255 255
+ 
+ -----------------------------------------------
+ class Program
+    {
+        static void Main(string[] args)
+        
+        {
+            byte b = 7, a = 1, c;
+            
+            c = a = b;
+            
+            Console.Write(a + " " + b+" "+c);
+            
+            Console.Read();
+        }
+        
+    }
+    
+    ÇIKTI: 7 7 7
+    
+    -------------------------------------
+    
+    class Program
+    {
+        static void Main(string[] args)
+        
+        {
+            Console.Write("vikikitapı seviyor musunuz? (e,h):");
+            
+            string durum = Console.ReadLine();
+            
+            Console.Write(durum == "e" ? "Teşekkürler!!" : "Sağlık olsun...");
+            
+            Console.Read();
+        }
+        
+    }
+    
+    ÇIKTI: vikikitabı seviyor musunuz? <e/h>: e
+           Teşekkürler!!
+
+
+
+
  
 **if else koşul yapısı**
 
