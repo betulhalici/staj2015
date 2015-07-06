@@ -87,6 +87,92 @@ namespace ConsoleApplication1
        10
        40
        
+--------------------------------
+
+using System;
+
+ class Operatorler
+ 
+ {
+ 
+ 	static void Main()
+ 	
+ 	{
+ 		object i="50";
+ 		
+ 		string s=i as string;
+ 		
+ 		Console.Write(s);
+
+   }
+ }
+ 
+     veya
+     
+ using System;
+ 
+ class Operatorler
+ 
+ {
+ 
+ 	static void Main()
+ 	
+ 	{
+ 	
+ 		int i=50;
+ 		
+ 		object s=i as object;
+ 		
+ 		Console.Write(s);
+ 	}
+ }
+
+ÇIKTI: 50
+ ----------------------------------
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Text;
+
+using System.Threading.Tasks;
+
+namespace ConsoleApplication12
+
+{
+
+    class Program
+    
+    {
+        static void Main(string[] args)
+        
+        {
+            int i = 50;
+            
+            bool b1 = i is int;
+            
+            bool b2 = i is double;
+            
+            bool b3 = 12 is byte;
+            
+            bool b4 = 'c' is string;
+            
+            bool b5 = 12f + 7 is int;
+            
+            Console.Write("{0}\n{1}\n{2}\n{3}\n{4}", b1, b2, b3, b4, b5);
+            
+            Console.Read();
+        }
+    }
+}
+
+ÇIKTI: True
+
+       False
+
+ 
 **if else koşul yapısı**
 
 int a = 3;
