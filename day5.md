@@ -3,6 +3,7 @@
    Stajımın 5.günü C# çalışmaya başladım,çeşitli örnekleri inceledim.
         
       Kaynak: <http://www.kemalkefeli.com/csharp-dersleri-icerik.html/>
+              <https://tr.wikibooks.org/wiki/C_Sharp_Programlama_Dili/C_Sharp_hakk%C4%B1nda_temel_bilgiler/>
   
   **Operatörler**
   
@@ -27,7 +28,7 @@ namespace ConsoleApplication1
             int sonuc, a, b;
  
             //Aritmetik işlemler
-            Console.WriteLine("Aritmetik İşlemler");
+            Console.WriteLine("Aritmetik İşlemler\n");
  
             sonuc = 4 * 3 / 2; //Öncelikler eşit olduğundan ilk görülen ilk yapılır
             Console.WriteLine(sonuc); //6
@@ -73,7 +74,6 @@ namespace ConsoleApplication1
 }
 
 ÇIKTI: Aritmetik İşlemler  
-
        6
       -2
        7
@@ -110,6 +110,47 @@ else
 }
 
 ÇIKTI: a sayısı b sayısından küçüktür.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication12
+
+{
+
+    class Program
+    
+    {
+        static void Main(string[] args)
+        
+        {
+            int a = 5, b = 7;
+            if(a<b)
+            
+            {
+                Console.WriteLine("a b'den küçük");
+                Console.Write(a);
+            }
+            
+            else
+            
+            {
+                Console.WriteLine("a b'den küçük değil");
+                Console.Write(b);
+            }
+            
+            Console.Read();
+        }
+    }
+}
+
+ÇIKTI: a b'den küçük
+
+       5
+
 
 **switch case**
 
