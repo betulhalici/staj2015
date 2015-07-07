@@ -1,3 +1,142 @@
+ **döngü yapıları**
+ <https://tr.wikibooks.org/wiki/C_Sharp_Programlama_Dili/Ak%C4%B1%C5%9F_kontrol_mekanizmalar%C4%B1/>
+ 
+ //----- FOR Döngüsü -----//
+ 
+ class Program
+ 
+    {
+        static void Main(string[] args)
+        
+        {
+            int toplam = 0;
+            
+            for (int i = 1; i <= 3; i++)
+            
+                toplam += i;
+                
+            Console.Write("toplam={0}", toplam);
+
+                Console.Read();
+        }
+    }
+    
+    ÇIKTI: toplam=6
+    ---------------------------------------------------------
+    static void Main(string[] args)
+        {
+            float s;
+            
+            int si, f;
+            
+            bool a = true;
+            
+            for (; a; )
+            
+            {
+                Console.Write("lütfen faktoriyelinin alınmasını istediğininz sayıyı girin:");
+                
+                s = Convert.ToSingle(Console.ReadLine());
+                
+                si = (int)s;
+                
+                if(si!=s || s<1)
+                
+                {
+                    Console.WriteLine("lütfen pozitif tamsayı girin:");
+                    
+                    a = true;
+                }
+                
+                else
+                
+                {
+                    a = false;
+                    
+                    for (f = 1; si > 1; si--)
+                    
+                        f *= si;
+                        
+                    Console.Write("faktoriyeli:{0}", f);
+                }
+            }
+
+                Console.Read();
+                
+ ÇIKTI:   lütfen faktoriyelinin alınmasını istediğininz sayıyı girin:3
+          faktoriyeli:6
+          
+ ---------------------------------------------------------
+ Aşağıdaki program klavyeden girilen 5 adet sayıyı küçükten büyüğe doğru sıralar.
+
+    class Program
+    {
+        static void Main(string[] args)
+        
+        {
+            int[] dizi = new int[5];
+            
+            for (int i = 0; i < 5;i++ )
+            
+            {
+                Console.Write((i + 1) + ".sayı giriniz:");
+                
+                dizi[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            
+            Array.Sort(dizi);
+            
+            Console.WriteLine("--------------------");
+
+            for (int i = 0; i < 5;i++ )
+            
+            {
+                Console.WriteLine(dizi[i]);
+            }
+
+
+                Console.Read();
+        }
+    }
+ÇIKTI:
+ 
+ 1.sayı giriniz:6
+ 2.sayı giriniz:2
+ 3.sayı giriniz:3
+ 4.sayı giriniz:5
+ 5.sayı giriniz:1
+ ------
+ 1
+ 2
+ 3
+ 5
+ 6
+ 
+      
+ 
+
+ 
+//----- WHILE Döngüsü -----//
+
+int j = 0;
+
+while (j < 5)
+
+{
+    Console.WriteLine(j);
+    j++;
+}
+ 
+//----- FOREACH Döngüsü -----//
+
+int[] array = new int[] { 0, 1, 2, 3, 4 };
+
+foreach (int item in array)
+
+{
+    Console.WriteLine(item);
+}
+
 **diziler**
 
 //Birinci tanımlama şekli
