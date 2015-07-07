@@ -271,10 +271,6 @@ using System;
     ÇIKTI: vikikitabı seviyor musunuz? <e/h>: e
            Teşekkürler!!
 
-
-
-
- 
 **if else koşul yapısı**
 
 int a = 3;
@@ -350,7 +346,6 @@ namespace ConsoleApplication12
 
        5
 
-
 **switch case**
 
 int islem = 1;
@@ -380,35 +375,37 @@ switch (islem)
    case 3 durumunun kodu yok ve hemen altında case 4 tanımlanmış. Bunun anlamı 3 ve 4 için aynı işlemi yap'tır.
    
    C#'ta herhangi bir case'e ait komutların break; satırı ile sonlandırılması gerekmektedir. Eğer break; satırı ile sonlandırılmazsa programımız hata verir.
+   
+----------------------------------
 
- **döngü yapıları**
- 
- //----- FOR Döngüsü -----//
- 
-for (int i = 0; i < 5; i++)
+static void Main(string[] args)
 
-{
-    Console.WriteLine(i);
-}
- 
-//----- WHILE Döngüsü -----//
+        {
+            int a = 4;
+            
+            switch(a)
+            
+            {
+                case 4:
+                
+                    string b = Console.ReadLine();
+                    
+                    Console.Write(b);
+                    
+                    break;
 
-int j = 0;
-
-while (j < 5)
-
-{
-    Console.WriteLine(j);
-    j++;
-}
- 
-//----- FOREACH Döngüsü -----//
-
-int[] array = new int[] { 0, 1, 2, 3, 4 };
-
-foreach (int item in array)
-
-{
-    Console.WriteLine(item);
-}
-
+                default:
+                
+                    Console.Write("deneme4");
+                    
+                    break;
+            }
+            
+            Console.Read();
+            
+        }
+        
+        ÇIKTI: b
+               
+               b
+               
