@@ -182,7 +182,7 @@ foreach (int item in array)
 
 Örnekler:
 
-- 1'den 100'e kadar olan sayılar içerisinde 5'e tam bölünen, ancak 7'ye tam bölünemeyen sayıları alt alta listeleyen, bu sayıların kaç tane olduğunu ve toplamını yazan bir program.
+- 1'den 55'e kadar olan sayılar içerisinde 5'e tam bölünen, ancak 7'ye tam bölünemeyen sayıları alt alta listeleyen, bu sayıların kaç tane olduğunu ve toplamını yazan bir program.
 
 namespace ConsoleApplication13
 
