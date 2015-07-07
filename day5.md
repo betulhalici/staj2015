@@ -377,7 +377,9 @@ switch (islem)
         break;
 }
 
-   switch (değişken) tanımlamasındaki değişkenin değeri yazdığımız case değerleri ile kontrol ediliyor. Burada islem=1 olduğu için case 1 ifadesine girilecek ve ekrana 1 yazılacak ardından da break komutu ile switch den çıkılacak. Burda birkaç ekstra özellik var, kodda da göreceğiniz gibi case 3 durumunun kodu yok ve hemen altında case 4 tanımlanmış. Eğer böyle yazarsanız 3 ve 4 için aynı işlemi yap anlamına gelecektir. Bir diğer nokta da bir nevi hata kontrolü olarak da kullanılabilecek olan default anahtar kelimesi. Eğer değişkenin değeri yazdığımız case ifadeleri arasında bulunamazsa otomatik olarak default ifadesi çalıştırılacak. Yazmak zorunda değilsiniz elbette, yazmadığınız taktirde switch bloğu içerisinde hiçbir şey yapılmadan çıkılacaktır.
+   case 3 durumunun kodu yok ve hemen altında case 4 tanımlanmış. Bunun anlamı 3 ve 4 için aynı işlemi yap'tır.
+   
+   C#'ta herhangi bir case'e ait komutların break; satırı ile sonlandırılması gerekmektedir. Eğer break; satırı ile sonlandırılmazsa programımız hata verir.
 
  **döngü yapıları**
  
