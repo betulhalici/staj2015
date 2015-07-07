@@ -1,6 +1,7 @@
  **döngü yapıları**
  <https://tr.wikibooks.org/wiki/C_Sharp_Programlama_Dili/Ak%C4%B1%C5%9F_kontrol_mekanizmalar%C4%B1/>
  <http://www.kodlamamerkezi.com/c-net/c-for-dongusu-ornekler-ile-detayli-anlatim/>
+ <http://www.kemalkefeli.com/csharp-dersleri-icerik.html/>
  
  //----- FOR Döngüsü -----//
  
@@ -122,11 +123,37 @@
        5
        
        6
+ -------------------------------
  
-      
- 
+    class Program
+    
+    {
+        static void Main(string[] args)
+        
+        {
+               for(int a=0;a<7;a++)
+               
+               {
+                   if (a % 2 == 1)
+                   
+                       continue;
+                       
+                   Console.WriteLine(a);
 
- 
+                   Console.Read();
+               }
+         }
+     }
+ÇIKTI: 0
+
+       2
+       
+       4
+       
+       6
+       
+       continue: döngünün o anki iterasyonu sonlanır.
+       
 //----- WHILE Döngüsü -----//
 
 int j = 0;
@@ -147,6 +174,60 @@ foreach (int item in array)
 {
     Console.WriteLine(item);
 }
+
+Örnekler:
+
+- 1'den 100'e kadar olan sayılar içerisinde 5'e tam bölünen, ancak 7'ye tam bölünemeyen sayıları alt alta listeleyen, bu sayıların kaç tane olduğunu ve toplamını yazan bir program.
+
+namespace ConsoleApplication13
+
+{
+    class Program
+    
+    {
+        static void Main(string[] args)
+        
+        {
+            int toplam = 0, sayi = 0, i = 5;
+            
+            for(;i<55;i+=5)
+            
+            {
+                if (i % 35 == 0)
+                
+                    continue;
+                    
+                sayi++;
+                
+                toplam += i;
+                
+                Console.WriteLine(i);
+                
+            }
+            Console.WriteLine("Sayısı: " + sayi);
+            
+            Console.WriteLine("Toplam: " + toplam);
+            
+            Console.ReadLine();
+            
+         }
+     }
+}
+
+ÇIKTI: 5
+       10
+       15
+       20
+       25
+       30
+       35
+       40
+       45
+       Sayısı:9
+       Toplam:240
+               
+
+
 
 **diziler**
 
