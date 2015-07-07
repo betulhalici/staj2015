@@ -269,13 +269,7 @@ static void Main(string[] args)
       
        101
        
-- Konsol ekranına girilen 0 ile 100 arasındaki 3 notun en büyüğünü, en küçüğünü ve ortalamasını yazan program.
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+- Konsol ekranına girilen 0 ile 100 arasındaki 3 notun en büyüğünü, en küçüğünü ve ortalamasını yazan program
 
  static void Main(string[] args)
  
