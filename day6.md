@@ -215,151 +215,135 @@ namespace ConsoleApplication13
 }
 
 ÇIKTI: 5
+
        10
+       
        15
+       
        20
+       
        25
+       
        30
+       
        35
+       
        40
+       
        45
+       
        Sayısı:9
+       
        Toplam:240
+       
+- Girilen pozitif herhangi bir tamsayıyı ikilik düzene çeviren program.
+
+static void Main(string[] args)
+
+ {
+      string mod = " ";
+            
+      Console.Write("sayıyı giriniz:");
+      
+      float a = Convert.ToSingle(Console.ReadLine());
+      
+      int b = (int)a;
+      
+      if (a <= 0 || a != b)
+                
+          mod = "pozitif tamsayı girmediğiniz için sayı ikilik sisteme dönüştürülemedi";
+          
+      else
+      
+          for (; b > 0; b /= 2)
+          
+                    mod = b % 2 + mod;
+                    
+       Console.Write(mod);
+       
+       Console.ReadLine();
+       
+  }
+  
+ÇIKTI: sayıyı giriniz:5
+      
+       101
+       
+- Konsol ekranına girilen 0 ile 100 arasındaki 3 notun en büyüğünü, en küçüğünü ve ortalamasını yazan program.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+ static void Main(string[] args)
+ 
+ {
+    int eb = 0, toplam = 0, ek = 0;
+    
+    for(int a=0,b;a<3;a++)
+    
+    {
+       
+        Console.Write(a + 1 + ".notu giriniz:");
+                
+        b = Convert.ToInt32(Console.ReadLine());
+                
+        if(b>100 || b<0)
                
-
-
-
-**diziler**
-
-//Birinci tanımlama şekli
-
-int[] dizi;
-
-dizi = new int[20];
- 
-//İkinci tanımlama şekli
-
-int[] dizi2 = new int[20];
- 
-//Birinci ve ikinci tanımlama için değer ataması
-
-dizi2[0] = 50;
-
-dizi2[1] = 60;
-
-//20 değeri de bu şekilde tanımlayabiliriz
- 
-//Üçüncü tanımlama şekli ve değer ataması
-
-int[] dizi3 = new int[5] { 10, 20, 30, 40, 50 };
- 
-//Dördüncü tanımlama şekli ve değer ataması
-
-int[] dizi4 = { 10, 20, 30, 40, 50 };
-
-    For döngüsü kullanarak, dizi içeriğini ekrana şu şekilde basabiliriz:
-
-for (int i = 0; i < dizi4.Length; i++)
-
-{
-    Console.Write(dizi4[i] + " ");
-}
-
-Programın amacı şu olsun: kullanıcıdan bir tarih alalım, daha sonra bu string tipindeki tarihi gerçek bir tarih nesnesine dönüştürüp bir ay sonrasını ekrana basalım.
-
-using System;
-
-namespace ConsoleApplication2
-
-{
-
-    class Program
-    
-    {
-        static void Main(string[] args)
-        
-        {
-            Console.Write("Lütfen tarih giriniz (ör: 29.08.1990): ");
+         {
+                    
+             Console.Write("yanlış not girdiniz.Tekrar giriniz:");
+                    
+             a--;
+                    
+             continue;
+             
+         }
+         
+         if(a==0)
+         
+         {
+                    
+             eb = b;
+                    
+             ek = b;
+                
+          }
+          
+          else
+          
+          {
+                    
+             if (b >eb)
+                        
+             eb = b;
+                    
+             if (b < ek)
+                        
+             ek = b;
+                
+           }
+           
+            toplam += b;
             
-            string kullaniciGirisi = Console.ReadLine();
- 
-            string[] tarihBilesenleri = kullaniciGirisi.Split('.');
- 
-            DateTime tarihNesnesi = new DateTime(Convert.ToInt32(tarihBilesenleri[2]),
-                                                 Convert.ToInt32(tarihBilesenleri[1]),
-                                                 Convert.ToInt32(tarihBilesenleri[0]));
- 
-            Console.WriteLine(tarihNesnesi.AddMonths(1).ToShortDateString());
-            Console.ReadKey();
         }
-    }
-}
-
-   **Console.Write** komutu ekrana yazı basmamızı sağlayan komuttur. Burada kullanıcıya tarih girmesini söylüyoruz. Bir alt satırda string tipinde bir değişken tanımlıyoruz ve kullanıcının girmiş olduğu değeri **Console.ReadLine** komutu yardımıyla bu değişkene atıyoruz.Split fonksiyonu string tipindeki değişkenlere uygulanabilir. Parametre olarak bir karakter veya kelime alır. Aldığı parametreyi string değişken içinde arar ve bulduğu her noktadan bölüp, parçalarından bir dizi oluşturur.
-     DateTime nesnesi tarih bilgilerini tutmamızı sağlar. Aslında gün, ay, yıl, saat, dakika, saniye gibi değerlerin tümünü içerisinde barındıran bir tiptir.Bu tarih nesnesi, tarih ile alakalı bir çok işlemde bize yardımcı olacaktır. Yeni bir tarih nesnesi tanımlıyoruz ve değer olarak da kullanıcının girmiş olduğu tarihi vermeye çalışacağız. new DateTime(Yil, Ay, Gun)şeklinde tanımlama yapıyoruz. Yalnız buradaki yıl, ay ve gün değişkeni normalde int tipinde olması lazım; ancak bizim elimizde string dizisi olduğu için her bir değeri int tipine dönüştürmemiz gerek. Bu noktada Convert.ToInt32 metodunu kullanıyoruz.Convert.ToInt32(tarihBilesenleri[2]) diyerek, tarihBilesenleri dizisinin 3. elemanını alıp, Convert metodu ile string tipinden int tipine dönüştürüyoruz. Aynı şekilde ay ve günü de dönüştürüyoruz.
-     En alttaki Console.ReadKey satırını koymazsak, program çalışır ve sonlandığı anda hemen kapanır, ekrandaki değerleri göremeyiz. Bu satırı yazdığımızda, program çalışmasını bitirecek ve bu satıra geldiğinde bir tuşa basılmasını bekleyecek, dolayısıyla biz de ekranda yazılanları okuyabileceğiz.
-     
-     Dizi metotları ise önceden yazılmış, belirli işlemleri yapmaya yarayan kod bloklarıdırlar. Mesela elinizde bir sayı dizisi var ve sayıları sıralamak istiyorsunuz. Sort() metodunu kullanabilirsiniz.Bu metodları herhangi bir dizi değişkeninin sonuna "." koyduktan sonra yazabilirsiniz.
-     
--	CopyTo: Bir dizinin bir bölümünü veya tamamını başka bir diziye kopyalamanızı sağlar.
-
--	GetLength: Dizinin uzunluğunu verir.
-
--	SetValue: Dizi içerisindeki herhangi bir alana değer atamanızı sağlar.
-
-     Değişkenin sonuna "." koyarak çağırabileceğiniz bu metotlar dışında, diziler için genel olarak tasarlanan başka metotlar da vardır. Bu metotları ise "Array." diyerek çağırabilirsiniz.
-     
--	BinarySearch: Verilen dizi içerisinde istediğiniz bir elemanı arar.
-
--	Clear: Dizinin elemanlarının bir kısmını veya tamamını silmenizi yani varsayılan değere çekmenizi sağlar.
-
--	IndexOf: Aradığınız bir değerin dizinin kaçıncı elemanı olduğunu öğrenmenizi sağlar (birden fazla varsa ilkini söyler).
-
--	LastIndexOf: Aradığınız bir değerin dizinin kaçıncı elemanı olduğunu öğrenmenizi sağlar (birden fazla varsa sonuncusunu söyler).
-
--	Reverse: Diziyi tersine çevirir. İlk eleman artık son eleman olur.
-
--	Sort: Diziyi sıralar.
-
-using System;
- 
-namespace Ders7
-
-{
-
-    class Program
-    
-    {
-        static void Main(string[] args)
         
-        {
-            int[] dizi = new int[] { 3, 4, 1, 2 };
-            
-            dizi.GetLength(0); // Tek boyutlu diziler için 0 yazılır. Sonuç: 4
-            
-            dizi.SetValue(5, 3); // "2" değerini "5" olarak değiştirir.
+      Console.Write("En büyük: {0}\nEn küçük: {1}\nOrtalama: " + toplam / 10, eb, ek);
+                    
+      Console.ReadLine();
+         
+ }
  
-            int sira = Array.IndexOf(dizi, 1); // dizi içerisinde "1" elemanının sırasını söyler. Sonuç: 2
-            
-            Console.WriteLine(sira); // 2
- 
-            Array.Reverse(dizi); // Diziyi tersine çevirir. Sonuç: 5, 1, 4, 3
-            
-            Array.Sort(dizi); // Diziyi küçükten büyüğe sıralar. Sonuç: 1, 3, 4, 5
- 
-            //dizi'nin son halini yazdıralım... 1,3,4,5 olmasını bekliyoruz
-            
-            for (int i = 0; i < dizi.GetLength(0); i++)
-            
-            {
-                Console.Write(dizi[i] + " ");
-            }
- 
-            Console.ReadKey();
-        }
-    }
-}
-
-ÇIKTI: 2
-
-       1 3 4 5
+ ÇIKTI: 1.notu giriniz:34
+  
+        2.notu giriniz:56
+        
+        3.notu giriniz:88
+        
+        En büyük:88
+        
+        En küçük:34
+        
+        Ortalama:17
