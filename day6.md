@@ -1,5 +1,6 @@
  **döngü yapıları**
  <https://tr.wikibooks.org/wiki/C_Sharp_Programlama_Dili/Ak%C4%B1%C5%9F_kontrol_mekanizmalar%C4%B1/>
+ <http://www.kodlamamerkezi.com/c-net/c-for-dongusu-ornekler-ile-detayli-anlatim/>
  
  //----- FOR Döngüsü -----//
  
@@ -64,6 +65,7 @@
                 Console.Read();
                 
  ÇIKTI:   lütfen faktoriyelinin alınmasını istediğininz sayıyı girin:3
+ 
           faktoriyeli:6
           
  ---------------------------------------------------------
@@ -98,19 +100,28 @@
                 Console.Read();
         }
     }
-ÇIKTI:
- 
- 1.sayı giriniz:6
- 2.sayı giriniz:2
- 3.sayı giriniz:3
- 4.sayı giriniz:5
- 5.sayı giriniz:1
- ------
- 1
- 2
- 3
- 5
- 6
+    
+ÇIKTI: 1.sayı giriniz:6
+
+       2.sayı giriniz:2
+       
+       3.sayı giriniz:3
+       
+       4.sayı giriniz:5
+       
+       5.sayı giriniz:1
+       
+        ------
+        
+       1
+       
+       2
+       
+       3
+       
+       5
+       
+       6
  
       
  
