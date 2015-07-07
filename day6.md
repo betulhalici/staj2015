@@ -167,6 +167,8 @@ while (j < 5)
  
 //----- FOREACH Döngüsü -----//
 
+   foreach sadece dizilere uygulanabilen bir döngü yapısıdır.Kullanımı şu şekildedir:
+
 int[] array = new int[] { 0, 1, 2, 3, 4 };
 
 foreach (int item in array)
@@ -174,6 +176,9 @@ foreach (int item in array)
 {
     Console.WriteLine(item);
 }
+
+
+   foreach döngüsüyle dizi elemanlarının değerini değiştiremeyiz, sadece ekrana yazdırmak gibi işler yapabiliriz.
 
 Örnekler:
 
