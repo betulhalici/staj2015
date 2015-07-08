@@ -733,7 +733,7 @@ namespace ConsoleApplication15
      
         {
             double e = Math.E;
-            
+                                                  ÇIKTI: e->2,71828182845905 pi->3,14159265358979
             double pi = Math.PI;
             
             Console.Write("e->" + e + " pi->" + pi);
@@ -743,7 +743,6 @@ namespace ConsoleApplication15
     }
 }
 
-ÇIKTI: e->2,71828182845905 pi->3,14159265358979
 -------------------------------
 namespace ConsoleApplication16
 {
