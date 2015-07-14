@@ -506,6 +506,7 @@ TimeSpan DakikaSayisi=new TimeSpan(0,0,23,0);
 DateTime nesne=DateTime.Now+DakikaSayisi;   //şimdiden 23 dk sonrasını ekrana yazar
 
 Console.WriteLine(nesne);  // 13.7.2015 17:44:34
+
 ----------------------
 
 DateTime yapısına ait olan AddDays() metodu DateTime türünden bir nesneye gün ekletip tutmak için kullanılır.
@@ -535,6 +536,7 @@ if(BitConverter.IsLittleEndian)
 else
    
    Console.WriteLine("Big Endian");
+   
 -------------------------
 
 int a=258; //00000000 00000000 00000001 00000010          ÇIKTI: 2
@@ -546,6 +548,7 @@ foreach(byte b in dizi)                                          0
 {                                                                0
    Console.WriteLine(b);
 }
+
 ------------------------------
 
 byte[] dizi={2,1,0,0};
@@ -553,6 +556,7 @@ byte[] dizi={2,1,0,0};
 Console.WriteLine(BitConverter.ToInt32(dizi,0));
                                 
                                 (.ToString olursa ekrana 02-01-00-00 yazar.)
+                                
 --------------------------
 
 byte[] dizi={2,1};
@@ -592,6 +596,7 @@ Console.WriteLine(Buffer.ByteLength(dizi)); //8
 byte[] dizi={0,3,2,1,4};
 
 Console.WriteLine(Buffer.GetByte(dizi,3));   // 1
+
 ----------------------
 
 short[] dizi={0,3,2,1,4}; 
