@@ -2,7 +2,7 @@
 
      Göstericiler (pointer) yapı nesnelerinin bellekteki adreslerini tutan bir veri tipidir. C# normal yollarla gösterici kullanılmasına izin vermez. Programımızın herhangi bir yerinde gösterici kullanabilmek için o yeri unsafe anahtar sözcüğüyle belirtmemiz gerekir.
 
-•	Bir sınıfı unsafe olarak belirtirsek o sınıf içinde gösterici kullanabiliriz.
+• Bir sınıfı unsafe olarak belirtirsek o sınıf içinde gösterici kullanabiliriz.
  
  unsafe class Sinif
  
@@ -10,7 +10,7 @@
     ...
  }
 
-•	Herhangi bir metodun içinde bir unsafe bloğu oluşturarak o bloğun içinde gösterici kullanabiliriz.
+• Herhangi bir metodun içinde bir unsafe bloğu oluşturarak o bloğun içinde gösterici kullanabiliriz.
  
  int Metot()
  
@@ -62,9 +62,9 @@
  
  gosterici=&a;
 
-###### * operatörü
+######* operatörü
 
-   * operatörü adreslerdeki veriyi görmek veya değiştirmek için kullanılır. * operatörü hangi tür göstericiyle kullanıldıysa o türde nesne geri döndürülür.
+  * operatörü adreslerdeki veriyi görmek veya değiştirmek için kullanılır. * operatörü hangi tür göstericiyle kullanıldıysa o türde nesne geri döndürülür.
  
  double a=5;
  
