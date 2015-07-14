@@ -5,6 +5,7 @@
 •	Bir sınıfı unsafe olarak belirtirsek o sınıf içinde gösterici kullanabiliriz.
  
  unsafe class Sinif
+ 
  {
     ...
  }
@@ -15,19 +16,21 @@
  
  {
     unsafe
+    
     {
        ...
     }
  }
 
-•	Normal bir metodu unsafe olarak belirterek o metot içinde gösterici kullanabiliriz.
+• Normal bir metodu unsafe olarak belirterek o metot içinde gösterici kullanabiliriz.
 
  unsafe int Metot()
+ 
  {
     ...
  }
 
-•	İçinde gösterici kullandığımız bir kaynak kod dosyası normal yollarla derlenemez. "Unsafe code may only appear if compiling with /unsafe" hatasıyla karşılaşırız.Bu hatayı düzeltmek için Solution’daki projemize sağ tıklayıp Properties -> Build menüsünden "Allow unsafe code" seçeneğini aktif etmeliyiz.
+• İçinde gösterici kullandığımız bir kaynak kod dosyası normal yollarla derlenemez. "Unsafe code may only appear if compiling with /unsafe" hatasıyla karşılaşırız.Bu hatayı düzeltmek için Solution’daki projemize sağ tıklayıp Properties -> Build menüsünden "Allow unsafe code" seçeneğini aktif etmeliyiz.
 
 ######Gösterici bildirimi
 
@@ -59,7 +62,7 @@
  
  gosterici=&a;
 
-** * operatörü**
+###### * operatörü
 
    * operatörü adreslerdeki veriyi görmek veya değiştirmek için kullanılır. * operatörü hangi tür göstericiyle kullanıldıysa o türde nesne geri döndürülür.
  
@@ -300,13 +303,13 @@ Diziler bir System.Array sınıfı türünden nesnedir. Dolayısıyla diziler bi
 
 NOT: Göstericiler ile indeksleyici kullanılabilir. Göstericilerde şu eşitlikler vardır:
 
-•	*(g+0) == g[0]
+• *(g+0) == g[0]
 
-•	*(g+1) == g[1]
+• *(g+1) == g[1]
 
-•	*(g+2) == g[2]
+• *(g+2) == g[2]
 
-•	*(g+3) == g[3]
+• *(g+3) == g[3]
 
    g[1] bir nesne belirtirken g+1 bir gösterici belirtir.
 
@@ -458,6 +461,7 @@ Stringlerin göstericiler için özel bir anlamı vardır. Stringlerin karakterl
  using System;
  
  class Stringler
+ 
  {
  
     unsafe static void Main()
