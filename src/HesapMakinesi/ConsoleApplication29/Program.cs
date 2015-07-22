@@ -18,50 +18,57 @@ namespace ConsoleApplication29
 
             do
             {
+                for (; ; ){
                     try
                     {
                         Console.Write("ilk sayıyı girin:");
                         s1 = Console.ReadLine();
 
                         sayi1 = Convert.ToDouble(s1);
+                        break;
                         
-                     }
+                    }
 
 
                     catch (Exception)
                     {
-                        
-                        
-                            Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
 
-                            Console.Write("\nilk sayıyı girin:");
-                            s1 = Console.ReadLine();
+                        //Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
 
-                            sayi1 = Convert.ToDouble(s1);
-                        
-                        
-                     }
-                
-                
-               try
+                        //Console.Write("\nilk sayıyı girin:");
+                        //s1 = Console.ReadLine();
+
+                        //sayi1 = Convert.ToDouble(s1);
+                        continue;
+
+
+                    }
+            }
+                for (; ; )
                 {
-                    Console.Write("ikinci sayıyı girin:");
-                    s2 = Console.ReadLine();
 
-                    sayi2 = Convert.ToDouble(s2);
+                    try
+                    {
+                        Console.Write("ikinci sayıyı girin:");
+                        s2 = Console.ReadLine();
 
-                    
+                        sayi2 = Convert.ToDouble(s2);
+                        break;
+
+
+                    }
+                    catch (Exception)
+                    {
+                        //Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
+                        //Console.Write("ikinci sayıyı girin:");
+                        //s2 = Console.ReadLine();
+                        //sayi2 = Convert.ToDouble(s2);
+                        continue;
+
+
+                    }
                 }
-                catch (Exception)
-                {
-                    Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
-                    Console.Write("ikinci sayıyı girin:");
-                    s2 = Console.ReadLine();
-                    sayi2 = Convert.ToDouble(s2);
-                    
 
-                }
-                
                 Console.WriteLine("\n1-toplama\n2-çıkarma\n3-çarpma\n4-bölme\n5-çıkış\n");
 
                 Console.WriteLine("İşlemi seçiniz:");
