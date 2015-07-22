@@ -1,6 +1,6 @@
 ######Hesap Makinesi Programı
 
-C# 'ta 4 işlem yapan hesap makinesi programı yazmam istendi.
+    C# 'ta 4 işlem yapan hesap makinesi programı yazmam istendi.
 
 ------>Programın ilk hali aşağıdaki gibidir:
 
@@ -15,10 +15,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace HesapMakinesi
+
 {
     class Program
+
     {
+
         static void Main(string[] args)
+
         {
 
             string s1, s2,islem;
