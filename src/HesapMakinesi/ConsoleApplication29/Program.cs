@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -18,33 +18,50 @@ namespace ConsoleApplication29
 
             do
             {
-                try
-                {
-                    Console.Write("ilk sayıyı girin:");
-                    s1 = Console.ReadLine();
+                    try
+                    {
+                        Console.Write("ilk sayıyı girin:");
+                        s1 = Console.ReadLine();
 
+                        sayi1 = Convert.ToDouble(s1);
+                        
+                     }
+
+
+                    catch (Exception)
+                    {
+                        
+                        
+                            Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
+
+                            Console.Write("\nilk sayıyı girin:");
+                            s1 = Console.ReadLine();
+
+                            sayi1 = Convert.ToDouble(s1);
+                        
+                        
+                     }
+                
+                
+               try
+                {
                     Console.Write("ikinci sayıyı girin:");
                     s2 = Console.ReadLine();
 
-                    sayi1 = Convert.ToDouble(s1);
                     sayi2 = Convert.ToDouble(s2);
+
+                    
                 }
-                catch (Exception hata)
+                catch (Exception)
                 {
-                    Console.WriteLine("Hata: " + hata.Message);
-                    Console.WriteLine("Tekrar deneyiniz ve lütfen sayı giriniz.");
-
-                    Console.Write("\nilk sayıyı girin:");
-                    s1 = Console.ReadLine();
-
+                    Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
                     Console.Write("ikinci sayıyı girin:");
                     s2 = Console.ReadLine();
-
-                    sayi1 = Convert.ToDouble(s1);
                     sayi2 = Convert.ToDouble(s2);
+                    
 
                 }
-
+                
                 Console.WriteLine("\n1-toplama\n2-çıkarma\n3-çarpma\n4-bölme\n5-çıkış\n");
 
                 Console.WriteLine("İşlemi seçiniz:");
@@ -90,3 +107,4 @@ namespace ConsoleApplication29
         }
     }
 }
+
