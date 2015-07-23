@@ -18,55 +18,37 @@ namespace ConsoleApplication29
 
             do
             {
-                for (; ; ){
+                for (; ; )
+                {
                     try
                     {
                         Console.Write("ilk sayıyı girin:");
                         s1 = Console.ReadLine();
-
                         sayi1 = Convert.ToDouble(s1);
                         break;
-                        
                     }
-
 
                     catch (Exception)
                     {
-
-                        //Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
-
-                        //Console.Write("\nilk sayıyı girin:");
-                        //s1 = Console.ReadLine();
-
-                        //sayi1 = Convert.ToDouble(s1);
                         continue;
-
-
                     }
-            }
+                 }
+
                 for (; ; )
                 {
-
                     try
                     {
                         Console.Write("ikinci sayıyı girin:");
                         s2 = Console.ReadLine();
-
                         sayi2 = Convert.ToDouble(s2);
                         break;
+                     }
 
-
-                    }
                     catch (Exception)
                     {
-                        //Console.WriteLine("Tekrar deneyiniz ve lütfen bir sayı giriniz.");
-                        //Console.Write("ikinci sayıyı girin:");
-                        //s2 = Console.ReadLine();
-                        //sayi2 = Convert.ToDouble(s2);
                         continue;
-
-
                     }
+               
                 }
 
                 Console.WriteLine("\n1-toplama\n2-çıkarma\n3-çarpma\n4-bölme\n5-çıkış\n");
@@ -76,14 +58,15 @@ namespace ConsoleApplication29
 
                 if (islem == "27")
                     break;
+
                 switch (islem)
                 {
-
                     case "1":
                         sonuc = sayi1 + sayi2;
                         Console.Write("{0}+{1}={2}\n", sayi1, sayi2, sonuc);
                         Console.ReadLine();
                         break;
+
                     case "2":
                         sonuc = sayi1 - sayi2;
                         Console.Write("{0}-{1}={2}\n", sayi1, sayi2, sonuc);
@@ -102,7 +85,6 @@ namespace ConsoleApplication29
                         Console.ReadLine();
                         break;
 
-
                     default:
                         Console.WriteLine("hatalı secim");
                         break;
@@ -110,8 +92,7 @@ namespace ConsoleApplication29
 
             } while (n != 27);
             Console.ReadLine();
-
-        }
-    }
-}
+          }
+      }
+ }
 
