@@ -175,15 +175,15 @@ using System;
 ÇIKTI: denemedenemedenemedenemedeneme
 
 
-using System;                               ÇIKTI: 1
+using System;                               
 
- class Metotlar1                                   2
+ class Metotlar1                                   
 
-  {                                                4
+  {                                                
 
-    static void Yaz(int[] dizi)                    7
+    static void Yaz(int[] dizi)                    
 
-    {                                              9
+    {                                              
 
           foreach(int i in dizi)
 
@@ -200,6 +200,16 @@ using System;                               ÇIKTI: 1
     }
  }
 
+ÇIKTI: 1
+
+       2
+       
+       4
+       
+       7
+       
+       9
+       
 ---------------------------------
 
 using System;
