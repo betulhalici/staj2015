@@ -10,17 +10,23 @@ namespace ConsoleApplication29
 {
     class Program
     {
+        const string İslemToplama = "1";
+        const string İslemCikarma = "2";
+        const string İslemCarpma = "3";
+        const string İslemBolme = "4";
+        const string İslemBitir = "5";
+        
         static double SayiGirisi(string soru)
         {
-           for(; ;)
-           {
-               try
-               {
-                  Console.WriteLine(soru);
-                  string kullaniciGirisi=Console.ReadLine();
-                  return Convert.ToDouble(kullaniciGirisi);
+            for (; ; )
+            {
+                try
+                {
+                    Console.WriteLine(soru);
+                    string kullaniciGirisi = Console.ReadLine();
+                    return Convert.ToDouble(kullaniciGirisi);
                 }
-                catch(Exception)
+                catch (Exception)
                 {
                 }
             }
@@ -36,65 +42,60 @@ namespace ConsoleApplication29
         {
             switch (islem)
             {
-                case "1":
+                case İslemToplama:
                     Console.WriteLine("Toplama: {0}", Toplama(sayi1, sayi2));
                     break;
 
-                case "2":
+                case İslemCikarma:
                     Console.WriteLine("Çıkarma: {0}", Çıkarma(sayi1, sayi2));
                     break;
 
-                case "3":
+                case İslemCarpma:
                     Console.WriteLine("Çarpma: {0}", Çarpma(sayi1, sayi2));
                     break;
 
-                case "4":
+                case İslemBolme:
                     Console.WriteLine("Bölme: {0}", Bölme(sayi1, sayi2));
                     break;
             }
         }
         static double Toplama(double sayi1, double sayi2)
         {
-            double toplama = sayi1 + sayi2;
+            var toplama = sayi1 + sayi2;
             return toplama;
         }
 
         static double Çıkarma(double sayi1, double sayi2)
         {
-            double çıkarma = sayi1 - sayi2;
+            var çıkarma = sayi1 - sayi2;
             return çıkarma;
         }
 
         static double Çarpma(double sayi1, double sayi2)
         {
-            double çarpma = sayi1 * sayi2;
+            var çarpma = sayi1 * sayi2;
             return çarpma;
         }
 
         static double Bölme(double sayi1, double sayi2)
         {
-            double bölme = sayi1 / sayi2;
+            var bölme = sayi1 / sayi2;
             return bölme;
         }
-         
+
         static void Main(string[] args)
         {
-            int n = 0;
             string islem;
-            double sayi1 = 0.0, sayi2 = 0.0;
-
             do
             {
-                sayi1=SayiGirisi("ilk sayıyı girin:");
-                sayi2=SayiGirisi("ikinci sayıyı girin:");
-               
+                var sayi1 = SayiGirisi("ilk sayıyı girin:");
+                var sayi2 = SayiGirisi("ikinci sayıyı girin:");
+                
                 islem = İslemSec();
 
-               if (islem == "27")
-                    break;
-
-               İslemYap(islem, sayi1, sayi2);
-            } while (n != 27);
+                İslemYap(islem, sayi1, sayi2);
+                
+             } while (islem != "5");
         }
     }
 }
